@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> LUSH SPLURGE</title>
+<img src="fairylights.gif" alt="fairylight" style="width:1000px;height:100px;">
+<meta name="viewport" content="width=device-width, initial-scale=0">
+
+<style>
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    
+}
+
+td, th {
+    border: 0px solid #dddddd;
+    text-align: left;
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe6ec;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 25px 28px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffdccc;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+li a.active {
+    background-color: #ff809f;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: hotpink;
+    color: white;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #feebed;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: #595959;
+    padding: 16px 18px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ffd9cc}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.mySlides {display:none;}
+
+body
+{
+    font-family:Verdana,sans-serif;font-size:1.0em;
+}
+
+div#header,div#footer,div#content,div#post {
+    border:1px solid grey;
+    margin:5px;margin-bottom:15px;padding:8px;
+    background-color:white;
+}
+div#header,div#footer {
+    color:white;background-color:#ffe0cc;margin-bottom:1px;
+}
+div#content {
+    background-color:#ffe0cc;
+}
+div#menu ul  {
+    margin:0;padding:0;
+}
+div#menu ul li {
+    display:inline; margin:2px;
+}
+
+header,footer,section,article {
+    border:1px solid grey;
+    margin:5px;margin-bottom:5px;padding:8px;
+    background-color:white;
+}
+header,footer {
+    color:white;background-color:#ffe0cc;margin-bottom:5px;
+}
+section {
+    background-color:#ddd;
+}
+nav ul  {
+    margin:0;padding:0;
+}
+nav ul li {
+    display:inline; margin:5px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a  href="pr.html">Whats trending!</a></li>
+  <li class="dropdown">
+    <a href="#" class="fsh">Fashion</a>
+    <div class="dropdown-content">
+      <a href="fashionnews.html">Fashion news</a>
+      <a href="prefall.html">Pre Fall 2016</a>
+    </div>
+  <li class="dropdown">
+    <a href="#" class="bt">Beauty</a>
+    <div class="dropdown-content">
+      <a href="hair.html">Hair</a>
+      <a href="makeup.html">Makeup</a>
+      <a href="skin.html">Skincare</a>
+    </div>
+    <li class="dropdown">
+    <a href="#" class="fd">Food</a>
+    <div class="dropdown-content">
+      <a href="baking.html">Baking</a>
+      <a href="recipe.html">Recipes</a>
+      
+    </div>
+    
+    <li class="dropdown">
+    <a href="#" class="acc">Accessories</a>
+    <div class="dropdown-content">
+      <a href="shoes.html">Shoes</a>
+      <a href="hand.html">Handbags</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="acc">Account</a>
+    <div class="dropdown-content">
+    
+      <a href="signout.php?logout=yes">Log Out</a>
+    </div>
+	
+      <li class="dropdown"  align="top right">
+    <a href="#" class="active">+Create</a>
+    <div class="dropdown-content">
+    <a href="submit.html">Submit story</a>
+    </div>
+  
+  </li>
+  
+</ul>
+
+
+<h1> LUSH SPLURGE</h1>
+
+
+<table style="width 90%"   align="center">
+  <tr>
+    <td><img src ="lush.jpg" alt="hair style" style="width:600px; hight:900px;"><br></th>
+</tr>
+</table>
+
+<table style="width:20%"  align ="center">
+  <tr>
+    <th><div class="w3-content w3-section" style="max-width:900px" >
+  <img class="mySlides" src="skin.jpg" style="width:600px; hight:900px;">
+  <img class="mySlides" src="skin1.jpg" style="width:600px; hight:900px;">
+  <img class="mySlides" src=" skin2.jpg " style="width:600px; hight:900px;">
+   <img class="mySlides" src=" skin3.jpg " style="width:600px; hight:900px;">
+    <img class="mySlides" src=" skin4.jpg " style="width:600px; hight:900px;">
+</div></th>
+    
+  </tr>
+
+
+</table>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<pre style="font-size:100%;font-family:Tahoma;"  align ="center" size="20%"> 
+<b>Face</b><br>
+Tea Tree Water Toner<br>
+Tea Tree is a great blemish fighter and is naturally anti-bacterial so works well at dealing with <br>
+breakouts as well as working as a toner. The spray pump is such a handy way to apply it too! I’ve<br>
+used this before and it really helped calm down my skin, and as I’m having a few hormonal <br>
+breakouts at the moment I decided to try this old favourite and see if it still worked.<br>
+
+
+Grease Lightning Spot Treatment<br>
+This is again in a useful nozzle so you can apply it directly onto blemishes. It’s so tiny so you <br>
+can keep it with you in your make up bag in case of emergencies! I have also used this before<br>
+when my skin has had little tantrums and it’s previously helped, which is why when I saw it on<br>
+the shelf, I popped it into my basket.<br>
+
+
+<b>Bath</b><br>
+Dreamtime Bath Melt<br>
+This is supposed to help you relax which sounds great for a bath after a busy or stressful day. <br>
+With lavender and chamomile it smells lovely, and also softens your skin with cocoa butter.<br>
+Perfect for before bedtime. I particularly love this one in the winter or when my skin needs <br>
+a little rehydration.<br>
+
+
+Pop in the Bath Bubble Bar<br>
+These bars make such amazing bubbles! You crumble a bit off to run under the tap so you can <br>
+actually use them more than once. This one has the scent of “The Olive Branch” which is one<br>
+of my favourite Lush scents and smells amazing.<br>
+
+
+I also picked up a few of my favourite bath bombs..<br>
+Granny Takes a Dip Bath Bomb (relatively new)<br>
+Dragon’s Egg Bath Bomb <br>
+Fizzbanger Bath Bomb<br>
+Sex Bomb Bath Bomb (Ultimate fave for night time)<br>
+
+Strawberry Feels Forever Massage Bar<br>
+This was one of my favourite massage bars back in the day. It was released as part of a valentines<br>
+launch and stuck around for quite a while. I’m pretty sure it disappeared off the shelves for a while<br>
+and when I saw this in the store I knew I had to grab one. Massage bars start to melt when they <br>
+warm up so this is a great way to moisturise your skin after the bath. It smells like strawberries <br>
+and cream too.<br>
+
+
+Ceridwen’s Cauldron Bath Melt<br>
+This bath melt is great for soothing and moisturising skin, the muslin pouch means that it dissolves<br>
+in the water and the larger bits are kept from floating about in the bath, but also can be picked up to<br>
+apply directly onto your skin. This one is a little more pricey, but it honestly does amazing things to<br>
+your skin. I love using this as a pick me up.<br>
+
+
+<b>Body</b><br>
+Handy Gurugu Hand Cream<br>
+This buttery hand cream is made with a blend of nut butters making it so creamy and softening, it <br>
+features orange extract too so has a fresh, natural scent to it. This is perfect for sorting out really<br>
+
+dry hands and is great for your nails too. This was one of my go-to products years ago, and I would<br>
+get through so many tubs of this. When I was in the shop I picked it up, gave it a sniff and it immediately <br>
+brought back so many memories. It really is an awesome hand cream. The only downside  is that the <br>
+tub is a little bulky for your handbag, but great to keep near your sink or on your bedside table.<br>
+<br>
+<br>
+
+
+
+
+<br></pre>
+
+</body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+ </html>

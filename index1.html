@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>WE!Sign Up </title>
+    
+    
+    <link rel="stylesheet" href="source/css/reset.css">
+
+    
+        <link rel="stylesheet" href="source/css/style.css">
+
+    <script type="text/javascript">
+		function test(){
+			var nm=document.getElementById("nam").value;
+			var em=document.getElementById("e").value;
+			var un=document.getElementById("un").value;
+			var pass=document.getElementById("p").value;
+			if(em.indexOf('@')==-1 || em.indexOf('.com')==-1 || em.length == 0 || em.indexOf('.com')<em.indexOf('@')){
+					alert("invalid email");
+					window.location.href = 'index.php';
+			}
+			else if(nm.length == 0){
+					alert("Name Absent");
+					window.location.href = 'index.php';
+			}
+			else if(un.length == 0){
+					alert("Username Absent");
+					window.location.href = 'index.php';
+			}
+			else if(pass.length == 0){
+					alert("Password Absent");
+					window.location.href = 'index.php';
+			}
+			
+			else{
+				alert("User Created");
+                 alert(nm);
+				window.location.href = 'signup.php?nam='+nm+'&uname='+un+'&email='+em+'&password='+pass;
+			}
+		}
+	</script>
+    
+    
+  </head>
+
+  <body>
+
+    <div class="contain">
+   <div id="close" class="close">Close</div>
+</div>
+<div class="containmain">
+  <div class="center">
+  <div class="profile">
+    
+  </div>
+  <form class="form" >
+  <input type="text" class="topform" placeholder="Name" name="name" id="nam" ><br>
+   <input type="text" class="topform" placeholder="User Name" name="uname" id="un"><br>
+  <input type="text" class="topform" placeholder="Email Address" name="email" id="e"><br>
+  <input type="password" class="bottomform" placeholder="Password" name="password" id="p"><br>
+ 
+ 
+  <input type="button" value="Submit" onclick="test()" />
+</form>
+    </div>
+</div>
+    <script src="jquery.min.js"></script>
+
+        <script src="source/js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
